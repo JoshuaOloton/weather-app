@@ -1,5 +1,7 @@
 // types.ts (optional separate file)
 
+import { daysOfWeek } from ".";
+
 export interface WeatherData {
   location: string;
   currentTemperature: number;
@@ -24,3 +26,5 @@ export interface WeatherHighlight {
   label: string;
   value: string;
 }
+
+export type DayOfWeek = typeof daysOfWeek[number];

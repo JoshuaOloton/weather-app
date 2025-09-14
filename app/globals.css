@@ -162,7 +162,7 @@
   }
 
   .text-preset-3 {
-    @apply font-dm-sans font-light text-3xl;
+    @apply font-dm-sans font-light text-2xl;
   }
 
   .text-preset-4 {
@@ -170,11 +170,11 @@
   }
 
   .text-preset-5 {
-    @apply font-dm-sans font-semibold text-xl leading-[120%];
+    @apply font-dm-sans font-semibold text-lg leading-[120%];
   }
 
   .text-preset-5-medium {
-    @apply font-dm-sans font-medium text-xl leading-[120%];
+    @apply font-dm-sans font-medium text-lg leading-[120%];
   }
 
   .text-preset-6 {

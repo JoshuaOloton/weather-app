@@ -19,20 +19,41 @@ const hourlyForecast: HourlyForecast[] = [
 ];
 
 const dailyForecast: DailyForecast[] = [
-    { day: "Tuesday", high: 21, low: 14, condition: "Rain" },
-    { day: "Wednesday", high: 19, low: 13, condition: "Drizzle" },
-    { day: "Thursday", high: 20, low: 14, condition: "Clear-sunny" },
-    { day: "Friday", high: 23, low: 16, condition: "Partly Cloudy" },
-    { day: "Saturday", high: 24, low: 17, condition: "Thunderstorms" },
-    { day: "Sunday", high: 22, low: 15, condition: "Drizzle" },
-    { day: "Monday", high: 22, low: 15, condition: "Fog" },
+    { day: "Tues", high: 21, low: 14, condition: "Rain" },
+    { day: "Wed", high: 19, low: 13, condition: "Drizzle" },
+    { day: "Thur", high: 20, low: 14, condition: "Clear-sunny" },
+    { day: "Fri", high: 23, low: 16, condition: "Partly Cloudy" },
+    { day: "Sat", high: 24, low: 17, condition: "Thunderstorms" },
+    { day: "Sun", high: 22, low: 15, condition: "Drizzle" },
+    { day: "Mon", high: 22, low: 15, condition: "Fog" },
 ];
 
 const weatherHighlights: WeatherHighlight[] = [
     { label: "Feels Like", value: "18°" },
     { label: "Humidity", value: "46%" },
-    { label: "Wind Speed", value: "14 km/h" },
+    { label: "Wind", value: "14 km/h" },
     { label: "Precipitation", value: "0 mm" },
 ];
 
-export { weatherData, hourlyForecast, dailyForecast, weatherHighlights };
+ const weatherIcons: { [key: string]: string } = {
+    "Drizzle": "icon-drizzle.webp",
+    "Fog": "icon-fog.webp",
+    "Overcast": "icon-overcast.webp",
+    "Partly Cloudy": "icon-partly-cloudy.webp",
+    "Rain": "icon-rain.webp",
+    "Snow": "icon-snow.webp",
+    "Thunderstorms": "icon-storm.webp",
+    "Clear-sunny": "icon-sunny.webp"
+  };
+
+  const daysOfWeek = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ] as const;
+
+export { weatherData, hourlyForecast, dailyForecast, weatherHighlights, weatherIcons, daysOfWeek };
