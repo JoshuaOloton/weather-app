@@ -1,8 +1,7 @@
 import { weatherHighlights } from "@/app/data"
 
-type Props = {}
 
-const WeatherHighlight = (props: Props) => {
+const WeatherHighlight = () => {
   return (
     <div className="col-span-1 md:col-span-2 grid grid-cols-2 lg:grid-cols-4 items-center gap-4 py-4">
       {weatherHighlights.map((highlight, id) => (

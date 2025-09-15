@@ -1,11 +1,8 @@
-import { useState, useEffect, use } from "react";
-import Image from "next/image";
 import {
   Select,
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";

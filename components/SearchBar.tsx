@@ -2,9 +2,8 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
-type Props = {};
 
-const SearchBar = (props: Props) => {
+const SearchBar = () => {
   return (
     <div className="flex flex-col md:flex-row gap-y-3 justify-center mt-4 w-full md:w-4/5 max-w-2xl m-auto">
       <div className="px-6 rounded-lg flex items-center w-full max-w-md mr-4 focus-visible:border-none focus-visible:ring-neutral-0/50 focus-visible:ring-[2px] dark:bg-neutral-800">

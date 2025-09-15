@@ -2,9 +2,8 @@
 import { weatherData } from "@/app/data"
 import Image from "next/image"
 
-type Props = {}
 
-const CurrentWeather = (props: Props) => {
+const CurrentWeather = () => {
   return (
     <div className="col-span-1 md:col-span-2 h-52 p-4 flex flex-col md:flex-row justify-between items-center bg-[url(../public/assets/images/bg-today-large.svg)] bg-cover bg-center rounded-lg text-white">
       <div>
