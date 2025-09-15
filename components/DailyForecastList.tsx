@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const DailyForecastList = () => {
   return (
-    <div className="grid grid-cols-3 md:grid-cols-7 gap-4">
+    <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-4">
       {dailyForecast.map((day, id) => (
         <div
           key={id}
