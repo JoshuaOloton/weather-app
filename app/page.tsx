@@ -10,9 +10,9 @@ export default function Home() {
       <WeatherSearch />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
         <CurrentWeather />
-        <HourlyForecast />
         <WeatherHighlight />
         <DailyForecast />
+        <HourlyForecast />
       </div>
     </main>
   );

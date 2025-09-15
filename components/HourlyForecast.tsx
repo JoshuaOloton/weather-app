@@ -17,7 +17,7 @@ const HourlyForecast = () => {
   }
 
   return (
-    <div className="col-span-1 md:row-span-3 p-4 bg-neutral-800 rounded-lg">
+    <div className="col-span-1 md:row-start-1 md:row-end-4 md:col-start-3 md:col-end-4 p-4 bg-neutral-800 rounded-lg h-fit">
       <HourlyForecastHeader day={day} onDayChange={handleDayChange} />
       <HourlyForecastList />
     </div>
